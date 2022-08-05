@@ -29,9 +29,11 @@ ul,li{
     height: 100px;
 }
 .Nav__bar{
-    display:flex;
-    justify-content: center;
-    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 .Nav__bar--Usuario{
     display: flex;
@@ -191,7 +193,7 @@ ul,li{
 .Main__votaciones--titular{
     grid-area: 1 / 1 / 2 / 4; 
 }
-.Main__votaciones--objeto1{
+/* .Main__votaciones--objeto1{
     width: 100px;
     height: 100px;
     background-color: var(--votaciones-elements);
@@ -211,6 +213,17 @@ ul,li{
     height: 100px;
     background-color: var(--votaciones-elements);
     margin: 3px;
+} */
+.Main__votaciones--contenedor {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 800px;
+	margin: 0 auto;
+}
+.grafico{
+    width: 100%;
+    height: 300px;
 }
 /* Footer */
 .footer{
