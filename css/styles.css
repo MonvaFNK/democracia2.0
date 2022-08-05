@@ -219,6 +219,7 @@ ul,li{
     justify-content: center;
     align-content: center;
     max-width: 800px;
+    min-height: 400px;
 	margin: 0 auto;
 }
 .grafico{
