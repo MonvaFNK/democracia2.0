@@ -12,9 +12,9 @@
     <head>
         <nav class="Nav">
             <ul class="Nav__bar">
-                <li class="Nav__bar--Usuario">Usuario</li>
-                <li class="Nav__bar--Leyes">Leyes/propuestas</li>
-                <li class="Nav__bar--Votaciones">Votaciones</li>
+                <li class="Nav__bar--Usuario"></li>
+                <li class="Nav__bar--Leyes"></li>
+                <li class="Nav__bar--Votaciones"></li>
                 <li class="Nav__bar--Hamburguesa">
                     <ul class="Hamburguesa">
                         <li class="Hamburguesa__cosa1">cosa1</li>
@@ -42,7 +42,8 @@
             <div class="Main__votaciones">
                 <h2 class="Main__votaciones--titular">Votaciones</h2>
                 <div class="Main__votaciones--contenedor">
-                    <canvas id="votaciones" class="grafico"></canvas>
+                    <div id="votaciones" class="grafico"></div>
+                    
                 </div>
                 <p id="total"></p>
             </div>
@@ -53,7 +54,8 @@
         <p>Gracias por visitar la pagina web</p>
     </footer>
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="/javascript/javascript.js"></script>
 </body>
 </html>
