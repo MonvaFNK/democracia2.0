@@ -30,10 +30,25 @@ ul,li{
 }
 .Nav__bar{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+}
+.Nav__bar--menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/recursos/Menu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px;
+    height: 50px;
+    background-color: var(--nav-button-color);
+    padding: 4px;
+    border-radius: 10px;
+    grid-area: 1 / 1 / 2 / 2;
 }
 .Nav__bar--Usuario{
     display: flex;
@@ -48,6 +63,7 @@ ul,li{
     background-color: var(--nav-button-color);
     padding: 4px;
     border-radius: 10px;
+    grid-area: 1 / 2 / 2 / 3;
 }
 .Nav__bar--Leyes{
     display: flex;
@@ -62,6 +78,7 @@ ul,li{
     background-color:var(--nav-button-color);
     padding: 4px;
     border-radius: 10px;
+    grid-area: 1 / 3 / 2 / 4;
 }
 .Nav__bar--Votaciones{
     display: flex;
@@ -76,6 +93,7 @@ ul,li{
     background-color: var(--nav-button-color);
     padding: 4px;
     border-radius: 10px;
+    grid-area: 1 / 4 / 2 / 5;
 }
 .Nav__bar--Hamburguesa{
     display: flex;
@@ -83,13 +101,13 @@ ul,li{
     justify-content: center;
     align-items: center;
     margin: 20px;
-    width: 50px;
     height: 50px;
     background-color: var(--nav-button-color);
     padding: 4px;
     border-radius: 10px;
     overflow:hidden;
     z-index: 1;
+    grid-area: 1 / 5 / 2 / 6;
 }
 .Nav__bar--Hamburguesa:hover{
     height: 150px;
