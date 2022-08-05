@@ -15,10 +15,6 @@ function drawChart() {
     
     var options = {
         title: 'Leyes activas a votacion',
-        animation:{
-            duration: 1000,
-            easing: 'out',
-        },
         backgroundColor: 'gray',
     };
     

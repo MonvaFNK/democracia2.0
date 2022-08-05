@@ -79,6 +79,7 @@ ul,li{
 }
 .Nav__bar--Hamburguesa{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 20px;
@@ -87,49 +88,37 @@ ul,li{
     background-color: var(--nav-button-color);
     padding: 4px;
     border-radius: 10px;
-    transition-duration: .5s;
     overflow:hidden;
-    position: relative;
-}
-.Nav__bar--Hamburguesa::before{
-    position: absolute;
-    content: " ";
-    background: rgb(250, 0, 0);
-    width: 30px;
-    height: 4px;
-    top: 10px;
-    border-radius: 5px;
-}
-.Nav__bar--Hamburguesa::after{
-    position: absolute;
-    content: " ";
-    background: rgb(250, 0, 0);
-    width: 30px;
-    height: 4px;
-    top: 20px;
-    border-radius: 5px;
+    z-index: 1;
 }
 .Nav__bar--Hamburguesa:hover{
     height: 150px;
-    transition-timing-function: ease;
     overflow:visible;
-    transition-duration: .5s;
 }
 .Nav__bar--Hamburguesa:hover .Hamburguesa__cosa1{
-    transition-timing-function: ease;
     display:flex;
 }
 .Nav__bar--Hamburguesa:hover .Hamburguesa__cosa2{
-    transition-timing-function: ease;
     display:flex;
 }
 .Nav__bar--Hamburguesa:hover .Hamburguesa__cosa3{
-    transition-timing-function: ease;
     display:flex;
 }
 .Nav__bar--Hamburguesa:hover .Hamburguesa__cosa4{
-    transition-timing-function: ease;
     display:flex;
+}
+.Hamburguesa__contenedor{
+    position: relative;
+
+}
+.Hamburguesa__contenedor--imagen {
+    width:100%;
+    max-width:400px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+
 }
 .Hamburguesa__cosa1{
     display: none;
